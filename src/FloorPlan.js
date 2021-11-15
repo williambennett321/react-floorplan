@@ -2,8 +2,8 @@ import React from 'react'
 import Kitchen from "./Kitchen.js"
 import Bedroom from "./Bedroom.js"
 import Livingroom from "./Livingroom.js"
-import BathOne from "./BathOne.js"
-import BathTwo from "./BathTwo.js"
+import Bath from "./Bath.js"
+
   
 function FloorPlan(props) {
     return (
@@ -11,10 +11,12 @@ function FloorPlan(props) {
       
       <div id="floorplan">
         <Kitchen />
-        <Bedroom />
+        <Bedroom bedNum={1} />
+        <Bedroom bedNum={2} />
+        <Bedroom bedNum={3} />
         <Livingroom />
-        <BathOne />
-        <BathTwo />
+        <Bath size= "half" />
+        <Bath size= "full" />
       </div>
       
     );
